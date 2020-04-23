@@ -2,40 +2,95 @@
 <html lang="en">
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="./css/one_page_website.css">
-<head>
-	<h1> Quantum Computer</h1>
-</head>
-<p> this is ther future of technology</p>
-<img src="dims.jpg" alt="oops">
-<div>
-	<div>
-		<ul>
-			<a href="#home" id="link">
-				<li>Home</li>
-			</a>
-			<a href="#gallery">
-				<li>Gallery</li>
-			</a>
-			<a href="#contact">
-				<li>Reservation</li>
-			</a>
-		</ul>
+	<head>
+		<h1> Quantum Computer</h1>
+	</head>
+	<p> this is ther future of technology</p>
+	<div class="row">
+		<div class="column">
+			<img src="dims.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="image001.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="image002.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+		</div>
+		<div class="column">
+			<img src="image003.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+		</div>
+		</div>
+		
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+		
+			<div class="mySlides">
+			<div class="numbertext">1 / 4</div>
+			<img src="dims.jpg" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+			<div class="numbertext">2 / 4</div>
+			<img src="image001.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+			<div class="numbertext">3 / 4</div>
+			<img src="image002.png" style="width:100%">
+			</div>
+		
+			<div class="mySlides">
+			<div class="numbertext">4 / 4</div>
+			<img src="image003.png" style="width:100%">
+			</div>
+		
+			<!-- Next/previous controls -->
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+			<!-- Caption text -->
+			<div class="caption-container">
+			<p id="caption"></p>
+			</div>
+		
+			<!-- Thumbnail image controls -->
+			<div class="column">
+			<img class="demo" src="dims.jpg" onclick="currentSlide(1)" alt="Nature">
+			</div>
+		
+			<div class="column">
+			<img class="demo" src="image001.png" onclick="currentSlide(2)" alt="Snow">
+			</div>
+		
+			<div class="column">
+			<img class="demo" src="image002.png" onclick="currentSlide(3)" alt="Mountains">
+			</div>
+		
+			<div class="column">
+			<img class="demo" src="image003.png" onclick="currentSlide(4)" alt="Lights">
+			</div>
+		</div>
 	</div>
-</div>
-<p>For a better understanding of what exactly we are looking at her is
-	a clip explaining quantum computers and how they work.
-	<a href="https://www.youtube.com/watch?v=u1XXjWr5frE">check this crazy video out</a>
-	<section>
-		<div id="contact">
-			<p> Register now for a tour on the worlds next big thing</p>
-	</section>
-	<form action="" method="get">
-		first name: <input type="text" name="first_name"><br>
-		last name: <input type="text" name="last_name"><br>
-		email: <input type="email" name="email"><br>
-		password: <input type="password" name="password"><br>
-		<input type="submit" value="submit">
-	</form>
-	<div>
-		www.Quantumfornewbies.Quan &nbsp;|&nbsp; &copy; 2020
-	</div>
+	<p>For a better understanding of what exactly we are looking at her is
+		a clip explaining quantum computers and how they work.
+		<a href="https://www.youtube.com/watch?v=u1XXjWr5frE">check this crazy video out</a>
+		<section>
+			<div id="contact">
+				<p> Register now for a tour on the worlds next big thing</p>
+		</section>
+		<form action="" method="get">
+			first name: <input type="text" name="first_name"><br>
+			last name: <input type="text" name="last_name"><br>
+			email: <input type="email" name="email"><br>
+			password: <input type="password" name="password"><br>
+			<input type="submit" value="submit">
+		</form>
+		<div>
+			www.Quantumfornewbies.Quan &nbsp;|&nbsp; &copy; 2020
+		</div>
+
+		<script src="js/one_page_webcite.js"></script>
+
+</html>
