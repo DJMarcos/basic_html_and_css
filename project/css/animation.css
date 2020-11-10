@@ -73,7 +73,7 @@
     left: 0;
     padding-left: 20px;
     padding-right: 20px;
-    justify-content: /* For centering text inside .photo-overlay */
+    justify-content: center; /* For centering text inside .photo-overlay */
     align-items: center;
     background: rgba(0,0,0, .5);
 }
@@ -90,7 +90,7 @@
     opacity: 0;
     transition: opacity .5s;
     border-radius: 10px;
-    cursor; pointer;
+    cursor: pointer;
 }
 
 .photo-overlay:hover {
@@ -99,7 +99,7 @@
 
 .photo img {
     transition: transform .5s;
-    transform-origin: 50% 50%
+    transform-origin: 50% 50%;
 }
 
 .photo:hover img {
