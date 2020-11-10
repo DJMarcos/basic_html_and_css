@@ -150,7 +150,7 @@ p {
     HOME SELECTION STYLES
 =================================================*/
 #home {
-    background: url(planets.jpg)non-repeat 50% 50%;
+    background: url(../planets.jpg)no-repeat 100% 100%;
     background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size : cover;
